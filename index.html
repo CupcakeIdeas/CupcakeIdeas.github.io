@@ -1,0 +1,209 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cupcakes Ideas | Cute recipes, flavors, frosting, and decorating inspiration</title>
+  <meta name="description" content="Cupcakes Ideas is your cute hub for cupcake recipes, frosting flavors, decorating ideas, baking tips, and party inspiration." />
+  <link rel="canonical" href="./" />
+  <meta property="og:title" content="Cupcakes Ideas" />
+  <meta property="og:description" content="Cute recipes and decorating inspiration for cupcakes." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#ff7ab6" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <script defer src="./assets/site.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="Cupcakes Ideas home">
+        <span class="brand-mark" aria-hidden="true">🧁</span>
+        <span class="brand-text">
+          <span class="brand-name">Cupcakes Ideas</span>
+          <span class="brand-tag">recipes • frosting • decorating</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="./ideas/">Ideas</a>
+        <a href="./cupcake-01/">Recipe 1</a>
+        <a href="./cupcake-02/">Recipe 2</a>
+        <a href="./cupcake-03/">Recipe 3</a>
+        <a href="./about/">About</a>
+        <a href="./contact/">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true">☰</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero card">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <h1>Cute cupcake recipes and decorating ideas</h1>
+          <p class="lead">
+            Pick a recipe, learn a frosting, and try a new decorating trick. This site is built to be simple, fast,
+            and easy to browse on phones.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="./ideas/">Browse cupcake ideas</a>
+            <a class="btn" href="./cupcake-01/">Start with Recipe 1</a>
+          </div>
+
+          <ul class="pill-row" aria-label="Highlights">
+            <li class="pill">Beginner friendly</li>
+            <li class="pill">Clear steps</li>
+            <li class="pill">Flavor swaps</li>
+            <li class="pill">Decor tips</li>
+          </ul>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <div class="sprinkle-bg">
+            <div class="cupcake-card">
+              <div class="cupcake-top">🧁</div>
+              <div class="cupcake-lines">
+                <div></div><div></div><div></div>
+              </div>
+              <div class="cupcake-caption">Sweet + simple</div>
+            </div>
+            <div class="mini-grid">
+              <div class="mini">🍓</div>
+              <div class="mini">🍫</div>
+              <div class="mini">🍋</div>
+              <div class="mini">🌈</div>
+              <div class="mini">🍪</div>
+              <div class="mini">🥥</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-3">
+      <article class="card">
+        <h2>Quick picks</h2>
+        <p>Three full recipes with clear steps, ingredient swaps, and decorating notes.</p>
+        <div class="stack">
+          <a class="link-card" href="./cupcake-01/">
+            <span class="emoji" aria-hidden="true">🧁</span>
+            <span>
+              <strong>Vanilla Confetti</strong>
+              <span class="muted">soft crumb, rainbow sprinkles</span>
+            </span>
+          </a>
+          <a class="link-card" href="./cupcake-02/">
+            <span class="emoji" aria-hidden="true">🍫</span>
+            <span>
+              <strong>Chocolate Fudge</strong>
+              <span class="muted">rich cocoa, glossy frosting</span>
+            </span>
+          </a>
+          <a class="link-card" href="./cupcake-03/">
+            <span class="emoji" aria-hidden="true">🍓</span>
+            <span>
+              <strong>Strawberry Shortcake</strong>
+              <span class="muted">fruit-forward, fluffy topping</span>
+            </span>
+          </a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Decorating ideas</h2>
+        <p>Simple decorations that look fancy: swirls, sprinkles, drizzles, and cute toppers.</p>
+        <a class="btn" href="./ideas/">Go to ideas page</a>
+        <div class="tipbox" role="note">
+          <strong>Tip:</strong> Chill your frosted cupcakes for 10 minutes before adding drizzles or toppings.
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Baking basics</h2>
+        <ul class="checklist">
+          <li>Room-temp eggs and butter mix smoother</li>
+          <li>Do not overmix after adding flour</li>
+          <li>Fill liners 2/3 full for even tops</li>
+          <li>Let cupcakes cool fully before frosting</li>
+        </ul>
+        <a class="btn ghost" href="./about/">Why this site exists</a>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Flavor builder</h2>
+      <p class="muted">Pick a base + frosting + topper. Copy the result for your own checklist.</p>
+
+      <div class="builder" data-builder>
+        <label class="field">
+          <span>Base</span>
+          <select data-base>
+            <option value="Vanilla">Vanilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Lemon">Lemon</option>
+            <option value="Funfetti">Funfetti</option>
+            <option value="Red Velvet">Red Velvet</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Frosting</span>
+          <select data-frosting>
+            <option value="Buttercream">Buttercream</option>
+            <option value="Cream Cheese Frosting">Cream Cheese</option>
+            <option value="Chocolate Ganache">Ganache</option>
+            <option value="Strawberry Whip">Strawberry Whip</option>
+            <option value="Lemon Glaze">Lemon Glaze</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Topper</span>
+          <select data-topper>
+            <option value="Sprinkles">Sprinkles</option>
+            <option value="Mini Chocolate Chips">Mini Choco Chips</option>
+            <option value="Crushed Cookies">Crushed Cookies</option>
+            <option value="Fresh Berries">Fresh Berries</option>
+            <option value="Toasted Coconut">Toasted Coconut</option>
+          </select>
+        </label>
+
+        <button class="btn primary" type="button" data-mix>Make my combo</button>
+      </div>
+
+      <div class="result" aria-live="polite" data-result>
+        <strong>Your combo:</strong> <span data-result-text>Vanilla + Buttercream + Sprinkles</span>
+        <button class="btn tiny" type="button" data-copy>Copy</button>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <span aria-hidden="true">🧁</span>
+            <strong>Cupcakes Ideas</strong>
+          </div>
+          <p class="muted">Cute cupcake recipes and decorating inspiration. Built for clarity and speed.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="./privacy/">Privacy</a>
+          <a href="./terms/">Terms</a>
+          <a href="./contact/">Contact</a>
+          <a href="./sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+      <p class="muted fineprint">© <span data-year></span> Cupcakes Ideas. All content written for this site.</p>
+    </footer>
+  </main>
+</body>
+</html>
