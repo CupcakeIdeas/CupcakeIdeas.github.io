@@ -4,55 +4,94 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Cupcakes Ideas | Cute recipes, flavors, frosting, and decorating inspiration</title>
-  <meta name="description" content="Cupcakes Ideas is your cute hub for cupcake recipes, frosting flavors, decorating ideas, baking tips, and party inspiration." />
+  <meta name="description" content="Cupcakes Ideas is a cute hub for cupcake recipes, frosting flavors, decorating ideas, baking tips, and party inspiration." />
+  <meta name="robots" content="index,follow" />
   <link rel="canonical" href="./" />
+
+  <!-- No flash theme load -->
+  <script>
+    (function(){
+      try{
+        var t = localStorage.getItem("cupcakes_theme");
+        if (t && t !== "light") document.documentElement.setAttribute("data-theme", t);
+      }catch(e){}
+    })();
+  </script>
+
+  <!-- Social -->
   <meta property="og:title" content="Cupcakes Ideas" />
   <meta property="og:description" content="Cute recipes and decorating inspiration for cupcakes." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/logo-cupcake.png" />
   <meta name="theme-color" content="#ff7ab6" />
+
+  <link rel="icon" href="./assets/logo-cupcake.png" />
   <link rel="stylesheet" href="./assets/styles.css" />
   <script defer src="./assets/site.js"></script>
+
+  <!-- Simple site schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Cupcakes Ideas",
+    "url": "./",
+    "description": "Cute cupcake recipes, decorating ideas, and baking tips.",
+    "inLanguage": "en"
+  }
+  </script>
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-<div class="toolbar">
-  <nav class="nav" aria-label="Primary">
-    <a href="../ideas/">Ideas</a>
-    <a href="../cupcake-01/">Recipe 1</a>
-    <a href="../cupcake-02/">Recipe 2</a>
-    <a href="../cupcake-03/">Recipe 3</a>
-    <a href="../about/">About</a>
-    <a href="../contact/">Contact</a>
-  </nav>
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="Cupcakes Ideas home">
+        <img class="brand-logo" src="./assets/logo-cupcake.png" alt="Cupcakes Ideas logo" width="42" height="42" />
+        <span class="brand-text">
+          <span class="brand-name">Cupcakes Ideas</span>
+          <span class="brand-tag">recipes • frosting • decorating</span>
+        </span>
+      </a>
 
-  <div class="theme-wrap">
-    <button class="icon-btn" type="button" aria-label="Theme" aria-expanded="false" data-theme-button>
-      <span class="spark" aria-hidden="true">✨</span>
-      <span data-theme-label>Strawberry Light</span>
-    </button>
-    <div class="theme-menu" data-theme-menu data-open="false" role="menu" aria-label="Theme menu">
-      <div data-theme-items></div>
+      <div class="toolbar">
+        <nav class="nav" aria-label="Primary">
+          <a href="./ideas/">Ideas</a>
+          <a href="./cupcake-01/">Recipe 1</a>
+          <a href="./cupcake-02/">Recipe 2</a>
+          <a href="./cupcake-03/">Recipe 3</a>
+          <a href="./about/">About</a>
+          <a href="./contact/">Contact</a>
+        </nav>
+
+        <div class="theme-wrap">
+          <button class="icon-btn" type="button" aria-label="Theme" aria-expanded="false" data-theme-button>
+            <span class="spark" aria-hidden="true">✨</span>
+            <span data-theme-label>Strawberry Light</span>
+          </button>
+          <div class="theme-menu" data-theme-menu data-open="false" role="menu" aria-label="Theme menu">
+            <div data-theme-items></div>
+          </div>
+        </div>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
     </div>
-  </div>
-
-  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
-    <span aria-hidden="true">☰</span>
-  </button>
-</div>
   </header>
 
   <main id="main" class="wrap">
-    <section class="hero card">
+    <section class="hero card reveal">
       <div class="hero-grid">
         <div class="hero-left">
           <h1>Cute cupcake recipes and decorating ideas</h1>
           <p class="lead">
-            Pick a recipe, learn a frosting, and try a new decorating trick. This site is built to be simple, fast,
-            and easy to browse on phones.
+            Pick a recipe, learn a frosting, and try a decorating trick. Everything is written to be simple, fast,
+            and easy to follow on phones.
           </p>
 
           <div class="cta-row">
@@ -66,32 +105,23 @@
             <li class="pill">Flavor swaps</li>
             <li class="pill">Decor tips</li>
           </ul>
+
+          <div class="trust-row" aria-label="Site notes">
+            <div class="trust-pill">📌 Original written content</div>
+            <div class="trust-pill">⚡ Fast and lightweight</div>
+            <div class="trust-pill">📱 Phone friendly</div>
+          </div>
         </div>
 
-        <div class="hero-right" aria-hidden="true">
-          <div class="sprinkle-bg">
-            <div class="cupcake-card">
-              <div class="cupcake-top">🧁</div>
-              <div class="cupcake-lines">
-                <div></div><div></div><div></div>
-              </div>
-              <div class="cupcake-caption">Sweet + simple</div>
-            </div>
-            <div class="mini-grid">
-              <div class="mini">🍓</div>
-              <div class="mini">🍫</div>
-              <div class="mini">🍋</div>
-              <div class="mini">🌈</div>
-              <div class="mini">🍪</div>
-              <div class="mini">🥥</div>
-            </div>
-          </div>
+        <div class="hero-right">
+          <div class="hero-photo" role="img" aria-label="Cupcakes on a tray"></div>
+          <div class="hero-photo-mini" role="img" aria-label="Cupcakes in a box"></div>
         </div>
       </div>
     </section>
 
-    <section class="grid-3">
-      <article class="card">
+    <section class="grid-3 reveal">
+      <article class="card hover">
         <h2>Quick picks</h2>
         <p>Three full recipes with clear steps, ingredient swaps, and decorating notes.</p>
         <div class="stack">
@@ -119,16 +149,16 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card hover">
         <h2>Decorating ideas</h2>
         <p>Simple decorations that look fancy: swirls, sprinkles, drizzles, and cute toppers.</p>
         <a class="btn" href="./ideas/">Go to ideas page</a>
         <div class="tipbox" role="note">
-          <strong>Tip:</strong> Chill your frosted cupcakes for 10 minutes before adding drizzles or toppings.
+          <strong>Tip:</strong> Chill frosted cupcakes for 10 minutes before adding drizzles or toppings.
         </div>
       </article>
 
-      <article class="card">
+      <article class="card hover">
         <h2>Baking basics</h2>
         <ul class="checklist">
           <li>Room-temp eggs and butter mix smoother</li>
@@ -140,7 +170,7 @@
       </article>
     </section>
 
-    <section class="card">
+    <section class="card reveal">
       <h2>Flavor builder</h2>
       <p class="muted">Pick a base + frosting + topper. Copy the result for your own checklist.</p>
 
@@ -187,14 +217,17 @@
       </div>
     </section>
 
-    <footer class="site-footer">
+    <footer class="site-footer card reveal">
       <div class="footer-grid">
         <div>
           <div class="footer-brand">
-            <span aria-hidden="true">🧁</span>
+            <img class="footer-logo" src="./assets/logo-cupcake.png" alt="" width="22" height="22" />
             <strong>Cupcakes Ideas</strong>
           </div>
           <p class="muted">Cute cupcake recipes and decorating inspiration. Built for clarity and speed.</p>
+          <p class="muted" style="margin-top:10px">
+            Contact: <a href="./contact/">Send a message</a>
+          </p>
         </div>
 
         <div class="footer-links">
