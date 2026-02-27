@@ -15,28 +15,30 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="../" aria-label="Cupcakes Ideas home">
-        <span class="brand-mark" aria-hidden="true">🧁</span>
-        <span class="brand-text">
-          <span class="brand-name">Cupcakes Ideas</span>
-          <span class="brand-tag">recipes • frosting • decorating</span>
-        </span>
-      </a>
+<div class="toolbar">
+  <nav class="nav" aria-label="Primary">
+    <a href="../ideas/">Ideas</a>
+    <a href="../cupcake-01/">Recipe 1</a>
+    <a href="../cupcake-02/">Recipe 2</a>
+    <a href="../cupcake-03/">Recipe 3</a>
+    <a href="../about/">About</a>
+    <a href="../contact/">Contact</a>
+  </nav>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="../ideas/">Ideas</a>
-        <a href="../cupcake-01/">Recipe 1</a>
-        <a href="../cupcake-02/">Recipe 2</a>
-        <a href="../cupcake-03/">Recipe 3</a>
-        <a href="../about/">About</a>
-        <a href="../contact/">Contact</a>
-      </nav>
-
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
-        <span aria-hidden="true">☰</span>
-      </button>
+  <div class="theme-wrap">
+    <button class="icon-btn" type="button" aria-label="Theme" aria-expanded="false" data-theme-button>
+      <span class="spark" aria-hidden="true">✨</span>
+      <span data-theme-label>Strawberry Light</span>
+    </button>
+    <div class="theme-menu" data-theme-menu data-open="false" role="menu" aria-label="Theme menu">
+      <div data-theme-items></div>
     </div>
+  </div>
+
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+    <span aria-hidden="true">☰</span>
+  </button>
+</div>
   </header>
 
   <main id="main" class="wrap">
